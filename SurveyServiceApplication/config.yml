@@ -1,0 +1,20 @@
+logId: "ocid1.log.oc1.ap-singapore-1.amaaaaaayjewd5yaqtbu7ugnjc45wcskxemkrbmok6pszfirdv2zvyxfho2q"
+
+server:
+  type: default
+  applicationConnectors:
+    - type: http
+      port: 8080
+  adminConnectors:
+    - type: http
+      port: 8081
+
+logging:
+  level: INFO
+  loggers:
+    com.example: DEBUG
+
+swagger:
+  resourcePackage: com.example.survey.api
+  title: Survey API
+  version: 1.0
